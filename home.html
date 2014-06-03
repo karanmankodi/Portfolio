@@ -4,47 +4,140 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Karan Mankodi - Information Systems professional with a knack to code!</title>
 
-<link rel="stylesheet" href="Styles/css/Custom.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"> </script>
 
+<!-- Style sheets and JavaScripts -->
+
+<link rel="stylesheet" href="Styles/css/Custom.css" />
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-
 <!-- Optional theme -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
-
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 <!-- temp links to stylesheets and scripts -->
 <link rel="stylesheet" href="Styles/css/bootstrap.min.css" />
 <link rel="stylesheet" href="Styles/css/bootstrap-theme.min.css" />
-<script src="Styles/js/bootstrap.min.js"> </script>
+<script src="Styles/js/bootstrap.min.js" type="text/javascript" language="javascript"> </script>
+<script src="Styles/js/jquery-2.0.3.min.js" type="text/javascript" language="javascript" > </script>
 <!-- end temp -->
+<!-- end style sheets and js -->
+
+<!-- JQuery -->
+<script>
+
+$(document).ready(function() {
+	
+	/*
+	// footer
+	$("#github-link").mouseenter(function() {
+		$(this).tooltip();
+	});
+	$("#github-link").mouseleave(function() {
+		$(this).tooltip();
+	});
+	$("#linkedin-link").mouseenter(function() {
+		$(this).tooltip();
+	});
+	$("#linkedin-link").mouseleave(function() {
+		$(this).tooltip();
+	}); */
+});
+
+</script>
+<!-- JQuery ends -->
+
+
+
+
 </head>
 
-<body class="container bg-info">
+<body class="container">
 <!-- Header -->
-<div id="header" class="page-header navbar-static-top row bg-primary"> 
-	<div id="name" class="col-lg-4 col-md-4 col-sm-12">
-    	<a href="#"> <p id="name-text" class="h3"> Karan Mankodi </p> </a>
+<div id="header" class="page-header navbar-static-top row"> 
+	<div class="row">
+    	<div id="name" class="col-xs-12">
+        	<p id="name-text" class="name-text"> Karan Mankodi </p>
+        </div>
+    </div>
+    <div id="title" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    	<p id="title-text" class="title-text"> Web/Application Developer </p>
     </div> 
+    <div id="education" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    	<a href="#" class="header-text"> <p id="education-text" class="header-text"> PROFESSIONAL </p> </a>
+    </div> 
+    <div id="projects" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    	<a href="#" class="header-text"> <p id="projects-text" class="header-text"> ACADEMICS </p> </a>
+    </div> 
+    <div id="resume" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    	<a href="#" class="header-text"> <p id="resume-text" class="header-text"> RESUME </p> </a>
+    </div>
+    <div id="contact" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+    	<a href="#" class="header-text"> <p id="contact-text" class="header-text"> CONTACT </p> </a>
+    </div>
 </div>
 <!-- Header ends -->
 
 
-<!-- Contact me form -->
-<!-- Contact form ends -->
-
 <!-- Content -->
-<div id="content" class="page-header navbar-static-top row"> 
-	<div id="underconstruction" class="col-lg-12 col-md-12 col-sm-12">
-    	<a href="#"> <p id="under-construction" class="h3"> This site is under construction. We'll be back soon!</p> </a>
-    </div> 
+
+<div id="about-page">
+
+
+
+<div id="pic" class="col-xs-4">
+	<img src="./Images/karan.jpg" width="100%" class="img-responsive img-circle" />
 </div>
+<div class="text-about-me" class="col-xs-8">
+	<p id="p-about-me" class="para-text"> blahblahblahfdjfkhafbajksbalsjdkjasbdjkasbf </p>
+</div>
+ 
+ 
+</div>
+
+<div id="professional-page" hidden="true">
+
+</div>
+
+<div id="academics-page" hidden="true">
+
+</div>
+
+<div id="contact-page" hidden="true">
+
+</div> 
+    
 
 <!-- Content ends -->
 
+<!-- Contact me form -->
+<!-- Contact form ends -->
+
+
+
 <!-- Footer -->
+<div id="footer" class="navbar-fixed-bottom row">
+	<div id="call" class="col-xs-12 col-sm-4 col-md-4">
+    	<img id="call-icon" src="Images/call.png" width="24" height="24" class="img-responsive" />
+        <p id="number"> +1-857-919-0840 </p>
+    </div>
+    <div id="email" class="col-xs-12 col-sm-4 col-md-4">
+    	<img id="email-icon" src="Images/mail.png" width="24" height="24" class="img-responsive" />
+        <p id="email-id"> mankodi.karan@gmail.com </p>
+    </div>
+    <div id="social" class="col-xs-12 col-sm-4 col-md-4">
+    	<img id="social-icon" src="Images/social.png" width="24" height="24" class="img-responsive" />
+        <div class="col-xs-2" id="github-icon">
+    	<a title="Follow me on Github" href="http://www.github.com/karanmankodi" target="_blank" rel="tooltip" id="github-link"> <img src="Images/github.png" width="24" height="24" class="img-responsive" /> </a>
+        </div>
+        <div class="col-xs-2" id="linkedin-icon">
+    	<a title="Add me on LinkedIn" href="http://www.linkedin.com/in/karanmankodi" target="_blank" rel="tooltip" id="linkedin-link"> <img src="Images/linkedin.png" width="24" height="24" class="img-responsive" /> </a>
+        </div>
+    </div>
+    
+    
+</div>
 
 <!-- Footer ends -->
 </body>
