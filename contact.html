@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Contact Us</title>
+
+<!-- Style sheets and JavaScripts -->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="Styles/css/Custom.css" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- end style sheets and js -->
+
+<!-- JQuery -->
+<script>
+	$(function() {
+		
+	});
+</script>
+
+<!-- JQuery ends -->
+
+</head>
+
+<body class="container">
+
+<div id="professional">
+
+<div id="contact-head" class="col-xs-12">
+	<p id="prof-heading"> CONTACT ME! </p>
+</div>
+
+
+<form action="MAILTO:mankodi.karan@gmail.com" method="post" enctype="text/plain">
+	<div class="row">
+    	<div class="col-md-6">
+        	<div class="form-group">
+            	<label for="name"> Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+            </div>
+            <div class="form-group">
+                <label for="email"> Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />				
+            </div>
+            <div class="form-group">
+                <label for="company"> Company </label>
+                <input type="company" class="form-control" id="email" placeholder="Company Name" />				
+            </div>
+            </div>
+             	<div class="col-md-6">
+                	<div class="form-group">
+                    	<label for="name">Message</label>
+                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                    </div>
+                </div>
+            <div class="col-md-12" align="center">
+                <button type="submit" class="btn btn-primary" id="btnContactUs"> Send Message</button>
+            </div>
+        </div>
+</form>
+
+</div>
+</body>
+</html>

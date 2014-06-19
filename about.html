@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>About Me</title>
+
+<!-- Style sheets and JavaScripts -->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="Styles/css/Custom.css" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- end style sheets and js -->
+
+<!-- JQuery -->
+<script>
+$(document).ready(function() {
+	
+	// about-me
+	$("#my-pic").click(function() {
+		$("#know-more").hide("slow");
+		$("#fun-loving-guy").show("slow");
+		$("#code").show("slow");
+		$("#photographer").show("slow");
+		$("#photographer2").show("slow");
+		$("#photographer3").show("slow");
+		$("#photographer4").show("slow");
+	});
+	
+});
+
+</script>
+<!-- JQuery ends -->
+
+</head>
+
+<body class="container">
+<div id="about-me" class="col-xs-12">
+	<center> 
+    <div id="text" class="col-md-12 hidden-xs hidden-sm">
+        <p id="hello"> Hi! </p>
+        <p id="know-more"> Click on me to know more! </p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="pic" class="col-xs-12">
+		<img id="my-pic" src="./Images/karan.jpg" width="200" class="img-responsive img-circle" align="middle" /> 
+    </div>
+    <div id="fun-loving-guy" hidden="true"> 
+    	<img src="Images/fun-loving-guy.jpg" width="200" class="img-responsive" />
+    </div>
+    <div id="code" hidden="true"> 
+    	<img src="Images/code.jpg" width="200" class="img-responsive" />
+    </div>
+    <div id="photographer" hidden="true"> 
+    	<img src="Images/photographer.jpg" width="200" class="img-responsive" />
+    </div>
+    <div id="photographer2" hidden="true"> 
+    	<img src="Images/photographer.jpg" width="200" class="img-responsive" />
+    </div>
+    <div id="photographer3" hidden="true"> 
+    	<img src="Images/photographer.jpg" width="200" class="img-responsive" />
+    </div>
+    <div id="photographer4" hidden="true"> 
+    	<img src="Images/photographer.jpg" width="200" class="img-responsive" />
+    </div>
+    </center>
+</div>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Professional Experiences</title>
+
+<!-- Style sheets and JavaScripts -->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="Styles/css/Custom.css" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- end style sheets and js -->
+
+<!-- JQuery -->
+<script>
+	$(function() {
+		$("#eze-icon").click(function() {
+			$("#icons-main").fadeOut("slow", function() {
+				$("#icons-menu").fadeIn("slow");
+				$("#desc").fadeIn("slow");
+				$("#eze-desc-full").show();
+			});
+			
+		});
+		$("#neu-ga-icon").click(function() {
+			$("#icons-main").fadeOut("slow", function() {
+				$("#icons-menu").fadeIn("slow");
+				$("#desc").fadeIn("slow");
+				$("#neu-ga-desc-full").show();
+			});
+			
+		});
+		$("#neu-math-icon").click(function() {
+			$("#icons-main").fadeOut("slow", function() {
+				$("#icons-menu").fadeIn("slow");
+				$("#desc").fadeIn("slow");
+				$("#neu-math-desc-full").show();
+			});
+			
+		});
+		$("#reliance-icon").click(function() {
+			$("#icons-main").fadeOut("slow", function() {
+				$("#icons-menu").fadeIn("slow");
+				$("#desc").fadeIn("slow");
+				$("#reliance-desc-full").show();
+			});
+			
+		});
+		
+		$("#eze-logo").click(function() {
+			$("#neu-ga-desc-full").hide();
+			$("#neu-math-desc-full").hide();
+			$("#reliance-desc-full").hide();
+			$("#eze-desc-full").fadeIn("slow");
+		});
+		$("#neu-ga-logo").click(function() {
+			$("#eze-desc-full").hide();
+			$("#neu-math-desc-full").hide();
+			$("#reliance-desc-full").hide();
+			$("#neu-ga-desc-full").fadeIn("slow");
+		});
+		$("#neu-math-logo").click(function() {
+			$("#neu-ga-desc-full").hide();
+			$("#eze-desc-full").hide();
+			$("#reliance-desc-full").hide();
+			$("#neu-math-desc-full").fadeIn("slow");
+		});
+		$("#reliance-logo").click(function() {
+			$("#neu-ga-desc-full").hide();
+			$("#neu-math-desc-full").hide();
+			$("#eze-desc-full").hide();
+			$("#reliance-desc-full").fadeIn("slow");
+		});
+		
+		
+		$("#eze-icon-xs").mouseenter(function() {
+			$("#eze-icon-xs").fadeOut("slow", function() {
+				$("#eze-desc-xs").fadeIn("slow");
+			});
+			
+		});
+		$("#eze-desc-xs").mouseleave(function() {
+			$("#eze-desc-xs").fadeOut("slow", function() {
+				$("#eze-icon-xs").fadeIn("slow");
+			});
+		});
+		
+		$("#neu-ga-icon-xs").mouseenter(function() {
+			$("#neu-ga-icon-xs").fadeOut("slow", function() {
+				$("#neu-ga-desc-xs").fadeIn("slow");
+			});
+			
+		});
+		$("#neu-ga-desc-xs").mouseleave(function() {
+			$("#neu-ga-desc-xs").fadeOut("slow", function() {
+				$("#neu-ga-icon-xs").fadeIn("slow");
+			});
+		});
+		
+		$("#neu-math-icon-xs").mouseenter(function() {
+			$("#neu-math-icon-xs").fadeOut("slow", function() {
+				$("#neu-math-desc-xs").fadeIn("slow");
+			});
+			
+		});
+		$("#neu-math-desc-xs").mouseleave(function() {
+			$("#neu-math-desc-xs").fadeOut("slow", function() {
+				$("#neu-math-icon-xs").fadeIn("slow");
+			});
+		});
+		
+		$("#reliance-icon-xs").mouseenter(function() {
+			$("#reliance-icon-xs").fadeOut("slow", function() {
+				$("#reliance-desc-xs").fadeIn("slow");
+			});
+			
+		});
+		$("#reliance-desc-xs").mouseleave(function() {
+			$("#reliance-desc-xs").fadeOut("slow", function() {
+				$("#reliance-icon-xs").fadeIn("slow");
+			});
+		});
+	});
+</script>
+
+<!-- JQuery ends -->
+
+</head>
+
+<body class="container">
+
+<div id="professional">
+
+<div id="prof-head" class="row col-xs-12">
+	<p id="prof-heading"> PROFESSIONAL EXPERIENCES </p>
+</div>
+
+<div id="icons-main">
+    <div class="row container hidden-xs">
+        <div id="eze" class="col-xs-6 col-sm-3 col-md-3 prof-icon">
+            <img id="eze-icon" src="Images/eze-icon.jpg" class="img-responsive" />
+        </div>
+        <div id="neu-ga" class="col-xs-6 col-sm-3 col-md-3 prof-icon">
+            <img id="neu-ga-icon" src="Images/northeastern-icon.jpg" class="img-responsive" />
+        </div>
+        <div id="neu-math" class="col-xs-6 col-sm-3 col-md-3 prof-icon">
+            <img id="neu-math-icon" src="Images/northeastern-icon-2.jpg" class="img-responsive" />
+        </div>
+        <div id="reliance" class="col-xs-6 col-sm-3 col-md-3 prof-icon">
+            <img id="reliance-icon" src="Images/reliance-icon.jpg" class="img-responsive" />
+        </div>
+    </div>    
+</div>
+
+<div id="icons-xs">
+    <div class="row container hidden-sm hidden-md hidden-lg">
+        <div id="eze-xs" class="col-xs-12 prof-icon">
+            <img id="eze-icon-xs" src="Images/eze-icon.jpg" class="img-responsive" />
+            <img id="eze-desc-xs" src="Images/eze-desc.jpg" class="img-responsive" style="display:none" />
+        </div>
+        <div id="neu-ga-xs" class="col-xs-12 prof-icon">
+            <img id="neu-ga-icon-xs" src="Images/northeastern-icon.jpg" class="img-responsive" />
+            <img id="neu-ga-desc-xs" src="Images/grad-desc.jpg" class="img-responsive" style="display:none" />
+        </div>
+        <div id="neu-math-xs" class="col-xs-12 prof-icon">
+            <img id="neu-math-icon-xs" src="Images/northeastern-icon-2.jpg" class="img-responsive" />
+            <img id="neu-math-desc-xs" src="Images/math-desc.jpg" class="img-responsive" style="display:none" />
+        </div>
+        <div id="reliance-xs" class="col-xs-12 prof-icon">
+            <img id="reliance-icon-xs" src="Images/reliance-icon.jpg" class="img-responsive" />
+            <img id="reliance-desc-xs" src="Images/reliance-desc.jpg" class="img-responsive" style="display:none" />
+        </div>
+    </div>    
+</div>
+
+
+<div id="icons-menu" class="col-sm-1" style="display:none">
+    <div class="row">
+        <img id="eze-logo" src="Images/eze-thumb.jpg" class="img-responsive thumb" />
+        <img id="neu-ga-logo" src="Images/neu-thumb.jpg" class="img-responsive thumb" />
+        <img id="neu-math-logo" src="Images/neu-thumb.jpg" class="img-responsive thumb" />
+        <img id="reliance-logo" src="Images/reliance-thumb.jpg" class="img-responsive thumb" />
+    </div>
+</div>
+<div class="col-xs-1">
+</div>
+<div id="desc" class="col-sm-10" style="display:none">
+    <div class="row">
+        <img id="eze-desc-full" src="Images/eze-desc-full.jpg" class="img-responsive" style="display:none" width="100%" />
+        <img id="neu-ga-desc-full" src="Images/grad-desc-full.jpg" class="img-responsive" style="display:none" width="100%" />
+        <img id="neu-math-desc-full" src="Images/math-desc-full.jpg" class="img-responsive" style="display:none" width="100%" />
+        <img id="reliance-desc-full" src="Images/reliance-desc-full.jpg" class="img-responsive" style="display:none" width="100%" />
+    </div>
+</div>
+
+
+
+
+</div>
+</body>
+</html>

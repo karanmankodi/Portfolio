@@ -4,9 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Karan Mankodi - Information Systems professional with a knack to code!</title>
 
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"> </script>
-
 <!-- Style sheets and JavaScripts -->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 <link rel="stylesheet" href="Styles/css/Custom.css" />
 <!-- Latest compiled and minified CSS -->
@@ -16,12 +17,6 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<!-- temp links to stylesheets and scripts -->
-<link rel="stylesheet" href="Styles/css/bootstrap.min.css" />
-<link rel="stylesheet" href="Styles/css/bootstrap-theme.min.css" />
-<script src="Styles/js/bootstrap.min.js" type="text/javascript" language="javascript"> </script>
-<script src="Styles/js/jquery-2.0.3.min.js" type="text/javascript" language="javascript" > </script>
-<!-- end temp -->
 <!-- end style sheets and js -->
 
 <!-- JQuery -->
@@ -29,6 +24,36 @@
 
 $(document).ready(function() {
 	
+	// about-me
+	$("#my-pic").click(function() {
+		$("#know-more").hide("slow");
+		$("#fun-loving-guy").show("slow");
+		$("#code").show("slow");
+		$("#photographer").show("slow");
+		$("#learner").show("slow");
+		$("#tech").show("slow");
+		$("#photographer4").show("slow");
+	});
+	
+	$("#professional-link").click(function() {
+		$("#content").empty();
+		$("#content").load("./professional.html");
+	});
+	
+	$("#about-me-link").click(function() {
+		$("#content").empty();
+		$("#content").load("./about.html");
+	});
+	
+	$("#academics-link").click(function() {
+		$("#content").empty();
+		$("#content").load("./academics.html");
+	});
+	
+	$("#contact-link").click(function() {
+		$("#content").empty();
+		$("#content").load("./contact.html");
+	});
 	/*
 	// footer
 	$("#github-link").mouseenter(function() {
@@ -56,25 +81,20 @@ $(document).ready(function() {
 <body class="container">
 <!-- Header -->
 <div id="header" class="page-header navbar-static-top row"> 
-	<div class="row">
-    	<div id="name" class="col-xs-12">
-        	<p id="name-text" class="name-text"> Karan Mankodi </p>
-        </div>
+	<div id="name-header" class="row col-xs-12">
+        <a id="about-me-link"> <p id="name-text" class="name-text"> Karan Mankodi </p> </a>
     </div>
-    <div id="title" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-    	<p id="title-text" class="title-text"> Web/Application Developer </p>
+    <div id="professional" class="col-sm-3 col-xs-6">
+    	<a class="header-text" id="professional-link"> <p id="professional-text" class="header-text"> PROFESSIONAL </p> </a>
     </div> 
-    <div id="education" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    	<a href="#" class="header-text"> <p id="education-text" class="header-text"> PROFESSIONAL </p> </a>
+    <div id="academics" class="col-sm-3 col-xs-6">
+    	<a class="header-text" id="academics-link"> <p id="academics-text" class="header-text"> ACADEMICS </p> </a>
     </div> 
-    <div id="projects" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    	<a href="#" class="header-text"> <p id="projects-text" class="header-text"> ACADEMICS </p> </a>
-    </div> 
-    <div id="resume" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    	<a href="#" class="header-text"> <p id="resume-text" class="header-text"> RESUME </p> </a>
+    <div id="resume" class="col-sm-3 col-xs-6">
+    	<a class="header-text" id="resume-link" href="./Mankodi_Karan.pdf" target="_blank"> <p id="resume-text" class="header-text"> RESUME </p> </a>
     </div>
-    <div id="contact" class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
-    	<a href="#" class="header-text"> <p id="contact-text" class="header-text"> CONTACT </p> </a>
+    <div id="contact" class="col-sm-3 col-xs-6">
+    	<a class="header-text" id="contact-link"> <p id="contact-text" class="header-text"> CONTACT </p> </a>
     </div>
 </div>
 <!-- Header ends -->
@@ -82,42 +102,54 @@ $(document).ready(function() {
 
 <!-- Content -->
 
-<div id="about-page">
+<div id="content">
 
 
-
-<div id="pic" class="col-xs-4">
-	<img src="./Images/karan.jpg" width="100%" class="img-responsive img-circle" />
+<div id="about-me" class="col-xs-12">
+	<center> 
+    <div id="text" class="col-md-12 hidden-xs hidden-sm">
+        <p id="hello"> HI !! </p>
+        <p id="know-more"> Click on me to know more! </p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="pic" class="col-xs-12">
+		<img id="my-pic" src="./Images/karan.jpg" width="200" class="img-responsive img-circle" align="middle" /> 
+    </div>
+    <div id="fun-loving-guy" hidden="true"> 
+    	<img src="Images/fun-loving-guy.jpg" width="200" class="img-responsive hidden-xs" />
+    </div>
+    <div id="code" hidden="true"> 
+    	<img src="Images/code.jpg" width="200" class="img-responsive hidden-xs" />
+    </div>
+    <div id="photographer" hidden="true"> 
+    	<img src="Images/photographer.jpg" width="200" class="img-responsive hidden-xs" />
+    </div>
+    <div id="learner" hidden="true"> 
+    	<img src="Images/learner.jpg" width="200" class="img-responsive hidden-xs" />
+    </div>
+    <div id="tech" hidden="true"> 
+    	<img src="Images/tech.jpg" width="200" class="img-responsive hidden-xs" />
+    </div>
+    <div id="photographer4" hidden="true"> 
+    	<img src="Images/thinker.jpg" width="200" class="img-responsive hidden-xs" />
+    </div>
+    </center>
 </div>
-<div class="text-about-me" class="col-xs-8">
-	<p id="p-about-me" class="para-text"> blahblahblahfdjfkhafbajksbalsjdkjasbdjkasbf </p>
-</div>
+
+
  
  
 </div>
 
-<div id="professional-page" hidden="true">
-
-</div>
-
-<div id="academics-page" hidden="true">
-
-</div>
-
-<div id="contact-page" hidden="true">
-
-</div> 
     
 
 <!-- Content ends -->
 
-<!-- Contact me form -->
-<!-- Contact form ends -->
 
-
-
-<!-- Footer -->
-<div id="footer" class="navbar-fixed-bottom row">
+<!-- Footer --> <!--
+<div id="footer" class="">
 	<div id="call" class="col-xs-12 col-sm-4 col-md-4">
     	<img id="call-icon" src="Images/call.png" width="24" height="24" class="img-responsive" />
         <p id="number"> +1-857-919-0840 </p>
@@ -134,9 +166,7 @@ $(document).ready(function() {
         <div class="col-xs-2" id="linkedin-icon">
     	<a title="Add me on LinkedIn" href="http://www.linkedin.com/in/karanmankodi" target="_blank" rel="tooltip" id="linkedin-link"> <img src="Images/linkedin.png" width="24" height="24" class="img-responsive" /> </a>
         </div>
-    </div>
-    
-    
+    </div>    
 </div>
 
 <!-- Footer ends -->
